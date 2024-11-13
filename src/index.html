@@ -6,8 +6,32 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <app-root></app-root>
+  <div class="container">
+    <img src="catalogo.png" class="background-image">
+    <!-- Header -->
+    <div class="header d-flex align-items-center">
+        <img src="logo.png" alt="Catálogo de Películas" class="me-3" style="width: 150px;">
+        <h1>Catálogo de Películas</h1>
+    </div>
+
+    <!-- Body -->
+    <div class="mt-4">
+        <h2>Bienvenido a nuestro Catálogo de Películas</h2>
+        <p>Aquí encontrarás una amplia selección de películas de diferentes géneros, desde acción hasta comedia. Explora y disfruta de nuestras recomendaciones.</p>
+        <app-root></app-root>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer text-center">
+        <p>Materia: Conceptualización de entornos de desarrollo de aplicaciones y servicios</p>
+        <p>Nombre: Eric Martinez Rosales</p>
+        <p>Código: 222958534</p>
+        <p>Correo: ericmtzr89@outlook.com</p>
+    </div>
+  </div>
+  
 </body>
 </html>

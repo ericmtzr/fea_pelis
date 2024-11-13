@@ -1,0 +1,29 @@
+<br />
+<table class="table">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Pelicula</th>
+        <th scope="col">link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let movie of movies">
+        <td>{{movie.id}}</td>
+        <td>{{movie.title}}</td>
+        <td>
+          <a
+            class="btn btn-primary btn-sm"
+            [routerLink]="['/movie',movie.id]">
+            Mas información / Editar
+          </a>
+        </td>
+        <td>
+          <a
+            class="btn btn-primary btn-sm btn-danger"
+            (click)="deletem(movie.id)"> Eliminar
+          </a>
+        </td>
+      </tr>
+    </tbody>
+</table>
