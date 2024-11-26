@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Movie} from '../interfaces/movie'
 import { MoviesService } from '../services/movies.service';
+import {Router} from '@angular/router'
 
 @Component({
   selector: 'app-add-movie',
@@ -12,17 +13,18 @@ export class AddMovieComponent implements OnInit {
     title: '',
     synopsis: '',
     year: 0,
-    cover: 0
+    cover: ''
   };
-  constructor (private moviesService: MoviesService) { }
+  constructor (private moviesService: MoviesService, private router: Router) { }
 
   ngOnInit(){
   }
 
   saveMovie(){
     this.moviesService.save(this.movie).subscribe((data)=>{
-      alert('Pelicula guardada');
+      alert('Usuario guardado');
       console.log(data);
+      this.router.navigate(['/movies'])
     }, (error)=>{
       console.log(error);
       alert('Ocurrio un error');

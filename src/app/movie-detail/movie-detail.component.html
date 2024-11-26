@@ -1,21 +1,20 @@
-<p>movie-detail works!</p>
-
 <div>
   <div class="mb-3">
-    <label for="title" class="form-label">Nombre de la Pelicula</label>
+    <label for="title" class="form-label">Nombre</label>
     <input [(ngModel)]="movieid.title" type="text" class="form-control" id="title" aria-describedby="emailHelp">
   </div>
   <div class="mb-3">
-    <label for="synopsis" class="form-label">Sinopsis de la Pelicula</label>
+    <label for="synopsis" class="form-label">Puesto</label>
     <input [(ngModel)]="movieid.synopsis" type="text" class="form-control" id="synopsis">
   </div>
   <div class="mb-3">
-      <label for="year" class="form-label">Año de la pelicula</label>
+      <label for="year" class="form-label">Departamento</label>
       <input [(ngModel)]="movieid.year" type="numer" class="form-control" id="year" aria-describedby="emailHelp">
     </div>
     <div class="mb-3">
-      <label for="cover" class="form-label">Costo de la pelicula</label>
+      <label for="cover" class="form-label">Fecha</label>
       <input [(ngModel)]="movieid.cover" type="numer" class="form-control" id="cover">
     </div>
-  <button (click)="updateMovie()" class="btn btn-primary">Actualizar</button>
+  <button (click)="updateMovie()" class="btn btn-primary me-2">Actualizar</button>
+  <button (click)="deletem(movieid.id)"class="btn btn-primary btn-danger">Eliminar</button>
 </div>       

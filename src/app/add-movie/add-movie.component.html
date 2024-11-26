@@ -1,21 +1,21 @@
-<p>Agregar nueva película al catálogo</p>
+<p>Agregar nuevo usuario</p>
 
 <div>
     <div class="mb-3">
-      <label for="title" class="form-label">Nombre de la Pelicula</label>
+      <label for="title" class="form-label">Nombre</label>
       <input [(ngModel)]="movie.title" type="text" class="form-control" id="title" aria-describedby="emailHelp">
     </div>
     <div class="mb-3">
-      <label for="synopsis" class="form-label">Sinopsis de la Pelicula</label>
+      <label for="synopsis" class="form-label">puesto</label>
       <input [(ngModel)]="movie.synopsis" type="text" class="form-control" id="synopsis">
     </div>
     <div class="mb-3">
-        <label for="year" class="form-label">Año de la pelicula</label>
+        <label for="year" class="form-label">Numero de departamento</label>
         <input [(ngModel)]="movie.year" type="numer" class="form-control" id="year" aria-describedby="emailHelp">
       </div>
       <div class="mb-3">
-        <label for="cover" class="form-label">Costo de la pelicula</label>
-        <input [(ngModel)]="movie.cover" type="numer" class="form-control" id="cover">
+        <label for="cover" class="form-label">fecha de entrada</label>
+        <input [(ngModel)]="movie.cover" type="text" class="form-control" id="cover">
       </div>
     <button (click)="saveMovie()" class="btn btn-primary">Agregar</button>
 </div>       
